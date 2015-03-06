@@ -1,15 +1,15 @@
 var gulp = require('gulp'),
     browserify = require('browserify'),
-    to5ify = require('6to5ify'),
+    babelify = require('babelify'),
     config = require('../config'),
     source = require('vinyl-source-stream'),
     buffer = require('vinyl-buffer'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename');
 
-gulp.task('browserify', ['6to5'], function() {
+gulp.task('browserify', ['babel'], function() {
   return browserify('./' + config.main)
-      .transform(to5ify)
+      .transform(babelify)
       .bundle()
       .pipe(source(config.main))
       .pipe(buffer())

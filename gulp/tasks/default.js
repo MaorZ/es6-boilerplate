@@ -1,5 +1,7 @@
 'use strict';
 var gulp = require('gulp');
 
-gulp.task('default', ['browserify'], function() {
+gulp.task('build', ['browserify'], function() {
 });
+
+gulp.task('default', ['build']);
