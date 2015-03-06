@@ -19,6 +19,7 @@ The root level of the project contins the following directories and files:
 * `lib/` - where your source code goes
 * `gulp/` - where all the gulp tasks are kept
 * `bootstrap.js` - this gets included into the test environment via jest
+* `dist/` - where your final bundle goes
 * `gulpfile.js` - the gulp entry point (shouldn't have to do anything with is)
 * `package.json` - lists dev dependencies for the build process
 
