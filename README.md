@@ -44,7 +44,7 @@ There is an npm script you can run to build:
 npm run build
 ```
 
-Or to kick of the file watcher and build as you make changes, then run the dev task:
+Or to kick off the file watcher and build as you make changes, run the dev task:
 
 ```
 npm run dev
