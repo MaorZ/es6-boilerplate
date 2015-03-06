@@ -2,7 +2,7 @@
 
 A starting place for ES6 projects.
 
-This repo contains a starting structure for writing well testing ECMAScript 6 applications.
+This repo contains a starting structure for writing well tested ECMAScript 6 applications.
 
 ##Tools
 
