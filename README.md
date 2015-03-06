@@ -8,8 +8,8 @@ This repo contains a starting structure for writing well testing ECMAScript 6 ap
 
 This repo comes packaged with [gulp](http://gulpjs.com/) tasks for transforming ES6 to ES5. The following tools are used:
 
-* [browserify](http://browserify.org/) (with the 6to5ify transformer)
-* [6to5](https://6to5.org/) - for transforming ES6 code to ES5 so you can use it today!
+* [browserify](http://browserify.org/) (with the babelify transformer)
+* [babel](https://babeljs.io/) - for transforming ES6 code to ES5 so you can use it today!
 * [jest](https://facebook.github.io/jest/) - for running unit tests
 
 ##Structure
