@@ -7,12 +7,22 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename');
 
-gulp.task('browserify', ['babel'], function() {
+/**
+ * Strips the directory from the path.
+ *
+ * @param {object} path
+ */
+function stripDirectory(path) {
+  path.dirname = '';
+}
+
+gulp.task('browserify', function() {
   return browserify('./' + config.main)
       .transform(babelify)
       .bundle()
       .pipe(source(config.main))
       .pipe(buffer())
+      .pipe(rename(stripDirectory))
       .pipe(gulp.dest(config.dist))
       .pipe(rename({suffix: '.min'}))
       .pipe(uglify())

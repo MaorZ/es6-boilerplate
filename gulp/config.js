@@ -1,16 +1,14 @@
 'use strict';
 
-var lib = 'lib',
-    src = 'src';
+var lib = 'lib';
 
 module.exports = {
-  src: src,
   lib: lib,
-  main: 'mylibrary.js',
+  main: lib + '/main.js',
   dist: 'dist',
   watch: {
     paths: ['js'].reduce(function(paths, ext) {
-      return paths.concat([src + '/**/*.' + ext, src + '/*.' + ext]);
+      return paths.concat([lib + '/**/*.' + ext, lib + '/*.' + ext]);
     }, [])
   }
 };
